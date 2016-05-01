@@ -1,0 +1,10 @@
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\bin\Debug\nunit.framework.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\bin\Debug\nunit.framework.xml
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\obj\Debug\TradeTests.csprojResolveAssemblyReference.cache
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\bin\Debug\Trades.Refactored.TradeTests.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\bin\Debug\Trades.Refactored.TradeTests.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\bin\Debug\Trades.Refactored.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\bin\Debug\Trades.Refactored.TradeLib.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\obj\Debug\Trades.Refactored.TradeTests.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeTests\obj\Debug\Trades.Refactored.TradeTests.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\Trades.Original\TradeTests\obj\Debug\TradeTests.csprojResolveAssemblyReference.cache

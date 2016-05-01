@@ -1,0 +1,8 @@
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\bin\Debug\Trades.Refactored.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\bin\Debug\Trades.Refactored.TradeLib.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\obj\Debug\Trades.Refactored.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\obj\Debug\Trades.Refactored.TradeLib.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\Trades.Original\TradeLib\bin\Debug\Trades.Original.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\Trades.Original\TradeLib\bin\Debug\Trades.Original.TradeLib.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\Trades.Original\TradeLib\obj\Debug\Trades.Original.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\Trades.Original\TradeLib\obj\Debug\Trades.Original.TradeLib.pdb

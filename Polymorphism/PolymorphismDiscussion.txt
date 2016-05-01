@@ -1,0 +1,19 @@
+Discussion:
+Under what condition we use intefaces rather than class inheritance.
+
+In addition what was said;
+Interfaces in .NET and C# are contracts, that must be implemented by the derived class. Interfaces in .NET contains methods, properities, events and indexers. Nothing else.
+
+Interfaces allows for loosly coupling and as well as coding to abstraction and not to concrete. It is widely being used in IoC - Inverse of control.
+which in turn allows better testability using mocking for example.
+A class can implement any number of interaces.
+
+Class inheritance and abstract in particular are for the case of a structured/hieratchy design where the based classes provide necessary default implementations
+And thus promote code reusbility.
+However, C# does not allow multiple inheritance
+
+Therefore when loosly coupled design and/or mulitiple implementations are needed, interfaces will be used.
+
+Interfaces are typically required by several design patterns such as : Strategy, Factory Method, Decorator, Adapter and Proxy
+Class inheritance is typically used in those pattern that may have commons steps or default implementations such as: Template pattern, Builder and prototype
+

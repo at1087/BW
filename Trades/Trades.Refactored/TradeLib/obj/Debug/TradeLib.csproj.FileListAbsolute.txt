@@ -1,0 +1,4 @@
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\bin\Debug\Trades.Refactored.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\bin\Debug\Trades.Refactored.TradeLib.pdb
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\obj\Debug\Trades.Refactored.TradeLib.dll
+C:\CS\CrackingCodeInterview\BW\BwSolution\TradeLib\obj\Debug\Trades.Refactored.TradeLib.pdb
