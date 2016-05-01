@@ -30,8 +30,12 @@ namespace BTreeApp
             var nodeK = tree.Add("K", nodeM, NodeAt.Right);
             var nodeF = tree.Add("F", nodeK, NodeAt.Right);
 
-            Console.WriteLine("============= :Original Tree (childtype & level): ============= ");
+            Console.WriteLine("============= :Original Tree (show Left/Right & rows): ============= ");
+            const string OriginalFile = @"C:\temp\Tree\OriginalTree.txt";
             tree.PrintTreeByLevel(showLeftOrRight_: true, showRowNumber_:true);
+
+            tree.PrintTreeByLevel(showLeftOrRight_: true, showRowNumber_: true, saveToFile_:OriginalFile);
+            Process.Start("Notepad.exe", OriginalFile);
 
             Console.WriteLine("============= :Original Tree: ============= ");
             tree.PrintTreeByLevel(showLeftOrRight_: false, showRowNumber_: false);
@@ -40,11 +44,10 @@ namespace BTreeApp
             Console.WriteLine("============= :Swapped Tree: ============= ");
             tree.PrintTreeByLevel();
 
-            Console.WriteLine("============= :Save Result Tree: ============= ");
-            var saveOnFile = @"C:\temp\Tree\PrintTree.txt";
-            Console.WriteLine();
-            Console.WriteLine(saveOnFile);
-            tree.PrintTreeByLevel(showLeftOrRight_: true, saveToFile_: saveOnFile, showRowNumber_: true);
+            const string ResultFile = @"C:\temp\Tree\SwappedTree.txt";
+            tree.PrintTreeByLevel(showLeftOrRight_: true, saveToFile_: ResultFile, showRowNumber_: true);
+
+            Process.Start("Notepad.exe", ResultFile);
 
             Console.ReadLine();
         }
