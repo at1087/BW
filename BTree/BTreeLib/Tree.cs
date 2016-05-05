@@ -43,6 +43,57 @@ namespace BTreeLib
         }
 
         /// <summary>
+        /// SwapLeftRightNode - recursively
+        /// 
+        /// For Example;
+        /// 
+        /// From:
+        ///                 J
+        ///        D               S
+        ///    A       G       M       Z
+        ///                      K
+        ///                       F
+        /// To:
+        ///                 J
+        ///        S               D
+        ///    Z       M       G       A
+        ///          K
+        ///         F
+        /// 
+        /// </summary>
+        /// <param name="start_"></param>
+        public void SwapLeftRightNode(Node start_)
+        {
+            if (start_ == null) return;
+
+            if (start_.LeftNode != null && start_.RightNode != null)
+            {
+                var temp = start_.LeftNode;
+                start_.LeftNode = start_.RightNode;
+                start_.LeftNode.NodeAt = NodeAt.Left;
+                start_.RightNode = temp;
+                start_.RightNode.NodeAt = NodeAt.Right;
+
+                this.SwapLeftRightNode(start_.LeftNode);
+                this.SwapLeftRightNode(start_.RightNode);
+            }
+            else if (start_.LeftNode != null && start_.RightNode == null)
+            {
+                start_.RightNode = start_.LeftNode;
+                start_.RightNode.NodeAt = NodeAt.Right;
+                start_.LeftNode = null;
+                this.SwapLeftRightNode(start_.RightNode);
+            }
+            else if (start_.RightNode != null && start_.LeftNode == null)
+            {
+                start_.LeftNode = start_.RightNode;
+                start_.LeftNode.NodeAt = NodeAt.Left;
+                start_.RightNode = null;
+                this.SwapLeftRightNode(start_.LeftNode);
+            }
+        }
+
+        /// <summary>
         /// CenteredText : returns value in the center of its column
         /// e.g. : '    XX     '  or '    L:XX     ' 
         /// </summary>
@@ -237,57 +288,6 @@ namespace BTreeLib
             }
 
             Console.WriteLine();
-        }
-
-        /// <summary>
-        /// SwapLeftRightNode - recursively
-        /// 
-        /// For Example;
-        /// 
-        /// From:
-        ///                 J
-        ///        D               S
-        ///    A       G       M       Z
-        ///                      K
-        ///                       F
-        /// To:
-        ///                 J
-        ///        S               D
-        ///    Z       M       G       A
-        ///          K
-        ///         F
-        /// 
-        /// </summary>
-        /// <param name="start_"></param>
-        public void SwapLeftRightNode(Node start_)
-        {
-            if (start_ == null) return;
-
-            if (start_.LeftNode != null && start_.RightNode != null)
-            {
-                var temp = start_.LeftNode;
-                start_.LeftNode = start_.RightNode;
-                start_.LeftNode.NodeAt = NodeAt.Left;
-                start_.RightNode = temp;
-                start_.RightNode.NodeAt = NodeAt.Right;
-
-                this.SwapLeftRightNode(start_.LeftNode);
-                this.SwapLeftRightNode(start_.RightNode);
-            }
-            else if (start_.LeftNode != null && start_.RightNode == null)
-            {
-                start_.RightNode = start_.LeftNode;
-                start_.RightNode.NodeAt = NodeAt.Right;
-                start_.LeftNode = null;
-                this.SwapLeftRightNode(start_.RightNode);
-            }
-            else if (start_.RightNode != null && start_.LeftNode == null)
-            {
-                start_.LeftNode = start_.RightNode;
-                start_.LeftNode.NodeAt = NodeAt.Left;
-                start_.RightNode = null;
-                this.SwapLeftRightNode(start_.LeftNode);
-            }
         }
     }
 }
